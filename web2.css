@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #f7f7f7; /* Lime 300 */
+    color: #374151; /* Gray 800 */
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+}
+.text-class {
+    font-family: 'Roboto', sans-serif; /* Use the selected Google Font */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.custom-navbar {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #bdabe9; /* Adjusted color */
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid #81c3e2;
+}
+
+/* Header */
+.custom-header {
+  
+    background: url('web2.png') no-repeat center center/cover;
+    border-bottom: 1x solid #37ace2;
+    background-color:   #c2b8dd;
+    padding: 4rem;
+    margin-top: 0rem;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* About Section */
+#about {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #c2b8dd; /* Lime 300 */
+    opacity: 1;
+    border-bottom: url('web2.png') no-repeat center center/cover;
+    padding: 2rem 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Projects Section */
+#projects {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #c2b8dd; /* Lime 200 (one shade lighter) */
+    padding: 3rem 0;
+    transition: background-color 0.3s ease;
+    border-bottom: url('web2.png') no-repeat center center/cover;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Project Card */
+.custom-project-card {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #bdabe9; /* Lime 200 (one shade lighter) */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #58bbda; /* Border color and thickness */
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 4s ease-in forwards;
+}
+
+.custom-project-card:hover {
+    background-color: #a387eb; /* Slightly darker shade */
+    transform: scale(1.02);
+}
+
+/* Experience Section */
+#experience {
+    background: url('web2.png') no-repeat center center/cover;
+    background-color: #c2b8dd; /* Lime 400 */
+    padding: 4rem 0;
+    opacity: 1;
+    margin: 0;
+    margin-bottom: 0; 
+     border-bottom: 3px solid #81c3e2;
+    animation: fadeIn 1s ease-in forwards;
+   
+}
+
+/* Footer */
+.custom-footer {
+    margin:0;
+    border-bottom: 2px solid #48474b;; /* Light gray */
+    background: url('web2.png') no-repeat center center/cover;
+    color: #374151; /* Gray 800 */
+    padding: 3rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 1rem;
+    }
+    .custom-header {
+        padding: 1rem;
+    }
+    #about, #projects, #experience {
+        padding: 2rem 1rem;
+    }
+    .custom-project-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra-small screens (phones) */
+@media (max-width: 480px) {
+    .custom-navbar {
+        font-size: 0.8rem;
+    }
+
+    .custom-header {
+        padding: 0.5rem;
+    }
+
+    .custom-project-card {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for images */
+.image-class {
+    max-width:  0%; /* Ensures the image is responsive */
+    height: auto;    /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
