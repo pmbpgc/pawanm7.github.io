@@ -23,7 +23,8 @@ html {
 /* Header */
 .custom-header {
     border-bottom: 2px solid #c2b6df;; /* Light gray */
-    background-color: #cbc4dd;; /* Lime 300 */
+   /* background-color: #cbc4dd;; /* Lime 300 */
+   background: url('web1.mp4') no-repeat center center/cover;
     padding: 2rem;
     margin-top: 1.5rem;
     transition: background-color 0.3s ease;
@@ -69,7 +70,7 @@ html {
 
 /* Experience Section */
 #experience {
-    background-color: #b0a0da;; /* Lime 400 */
+    background-color: #c2b8dd; /* Lime 400 */
     padding: 3rem 0;
     opacity: 0;
     animation: fadeIn 5s ease-in forwards;
@@ -102,5 +103,59 @@ html {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Adjusting the header padding for smaller screens */
+    .custom-header {
+        padding: 1rem;
+    }
+
+    /* Adjusting the navbar padding and font size */
+    .custom-navbar {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Adjusting padding for sections */
+    #about, #projects, #experience {
+        padding: 2rem 1rem;
+    }
+
+    /* Adjusting project card sizes */
+    .custom-project-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra-small screens (phones) */
+@media (max-width: 480px) {
+    .custom-navbar {
+        font-size: 0.8rem;
+    }
+
+    .custom-header {
+        padding: 0.5rem;
+    }
+
+    .custom-project-card {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust font sizes and padding */
+    h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 }
